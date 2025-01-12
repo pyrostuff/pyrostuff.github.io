@@ -1,0 +1,102 @@
+<html>
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFZ72L5FPQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TFZ72L5FPQ');
+</script>
+    <title>BrunysIXLWork | Settings</title>
+    <link rel="icon" type="image/x-icon" href="/storage/images/main/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/storage/css/styles.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <h5 id="fetching-text">Fetching assets</h5>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="/">
+                <img src="/storage/images/main/logo.png" class="logo">
+                <p class="nav-text">BRUNYSIXLWORK</p>
+            </a>
+        </div>
+        <div class="navbar-right">
+            <a href="/games.html" class="nav-button"><i class="fas fa-gamepad"></i></a>
+            <a href="/apps.html" class="nav-button"><i class="fas fa-th"></i></a>
+            <a href="/proxy.html" class="nav-button"><i class="fas fa-globe"></i></a>
+            <a href="/ai.html" class="nav-button"><i class="fa-solid fa-robot"></i></a>
+            <a href="/extra.html" class="nav-button"><i class="fas fa-plus"></i></a>
+            <a href="/settings.html" class="nav-button"><i class="fas fa-cog"></i></a>
+        </div>
+    </div>
+
+<div style="padding-top: 80px;" class="container-settings">
+        <div class="box">
+            <h2>tab cloaking</h2>
+            <select class="sigma" id="presetSelect">
+                <option value="ixl">ixl</option>
+                <option value="s">schoology</option>
+                <option value="google">google</option>
+                <option value="googleclassroom">google classroom</option>
+                <option value="googledrive">google drive</option>
+                <option value="chrometab">chrome new tab</option>
+                <option value="gmail">gmail</option>
+                <option value="bing">bing</option>
+                <option value="desmos">desmos calculator</option>
+                <option value="wikipedia">wikipedia</option>
+            </select>
+        
+            <button class="sigma" id="saveButton">select cloak</button>
+            <button class="sigma" id="resetButton">reset cloak</button>
+            <p id="success" style="display: none;">success message here</p>
+        </div>
+  
+        <div class="box">
+            <h2>panic mode</h2>
+            <input class="sigma" type="text" id="panicKey" placeholder="choose a key combination" readonly>
+            <input class="sigma" type="url" id="panicUrl" placeholder="https://www.desmos.com/scientific">
+            <button class="sigma" onclick="saveSettings()">set panic key</button>
+            <p id="success-panic" style="display: none;">success message here</p>
+        </div>
+  
+        <div class="box">
+            <script>
+        function openIframe() {
+            
+            const newWindow = window.open('about:blank');
+
+ 
+            const iframe = newWindow.document.createElement('iframe');
+            iframe.src = '/'; 
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.border = 'none';
+            iframe.style.margin = 'none';
+
+          
+            newWindow.document.body.appendChild(iframe);
+        }
+    </script>
+            <h2>about:blank</h2>
+            <button class="sigma" onclick="openIframe()">About:Blank</button>
+        </div>
+    </div>
+  
+    <script src="/storage/js/script.js"></script>
+    <script src="/storage/js/cloak.js"></script>
+    <script src="/storage/js/data.js"></script>
+    <script src="/storage/js/settings.js"></script>
+</body>
+</html>

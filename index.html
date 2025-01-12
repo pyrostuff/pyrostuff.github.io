@@ -1,0 +1,78 @@
+<html>
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFZ72L5FPQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TFZ72L5FPQ');
+</script>
+    <title>BrunysIXLWork</title>
+    <link rel="icon" type="image/x-icon" href="/storage/images/main/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/storage/css/styles.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <h5 id="fetching-text">Fetching assets</h5>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="/">
+                <img src="/storage/images/main/logo.png" class="logo">
+                <p class="nav-text">BRUNYSIXLWORK</p>
+            </a>
+        </div>
+        <div class="navbar-right">
+            <a href="/games.html" class="nav-button"><i class="fas fa-gamepad"></i></a>
+            <a href="/apps.html" class="nav-button"><i class="fas fa-th"></i></a>
+            <a href="/proxy.html" class="nav-button"><i class="fas fa-globe"></i></a>
+            <a href="/ai.html" class="nav-button"><i class="fa-solid fa-robot"></i></a>
+            <a href="/extra.html" class="nav-button"><i class="fas fa-plus"></i></a>
+            <a href="/settings.html" class="nav-button"><i class="fas fa-cog"></i></a>
+        </div>
+    </div>
+
+    <h1 style="margin-top: 100px">Welcome To B.I.W...</h1>
+
+    <p class="time-display">Your current time for your location is: <span id="time"></span> updating in REAL time!</p>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      document.getElementById('time').textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime(); 
+  </script>
+        
+    <a href="/games.html"><button class="sigma">GAMES</button></a>
+    <a href="/apps.html"><button class="sigma">APPS</button></a>
+    <a href="/proxy.html"><button class="sigma">PROXY</button></a>
+
+    <script src="/storage/js/script.js"></script>
+    <script src="/storage/js/cloak.js"></script>
+    <script src="/storage/js/data.js"></script>
+    <script src="/storage/js/settings.js"></script>
+</body>
+</html>
+
+    <meta property="og:title" content="BrunysIXLWork">
+    <meta property="og:description" content="A gaming and proxy service just for you.">
+    <meta property="og:image" content="/storage/images/main/logo.png">
+    <meta property="og:image:width" content="100">
+    <meta property="og:image:height" content="100">
+    <meta property="og:url" content="https://brunysixlwork.site">
+    <meta name="theme-color" content="#0d0d0d">
+    <meta name="msapplication-TileColor" content="#0d0d0d">
