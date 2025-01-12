@@ -1,0 +1,94 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+
+body {
+   color: #fff;
+   background-color: #0d0d0d;
+   text-align: center;
+   font-family: "Outfit", sans-serif;
+}
+
+#search-container {
+    margin-top: 5px;
+}
+
+.search-bar-home {
+    padding: 20px;
+    width: 400px;
+    border: none;
+    background-color: #141414;
+    border-radius: 50px;
+    font-family: "Outfit", sans-serif;
+    outline: none;
+    margin: 0;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#search-button {
+    padding: 20px 25px;
+    margin-left: 5px;
+    border: none;
+    background-color: #141415;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #555;
+}
+
+</style>
+
+<h1 style="margin: 0; padding-top: 40px;">Brucite</h1>
+  <p id="dynamicParagraph">gyatt</p>
+
+    <script>
+        const phrases = [
+            "Welcome To BrunysIXLWork! choose one of our options below to start!",
+            "B.I.W best unblocked games ever!",
+            "https://dsc.gg/bruny",
+            "Made by Brunys",
+            "Also try Jade Proxy!",
+            "still active despite be unactive for months ¯\_(ツ)_/¯ ",
+            "Roblox should now work my eskibidi sigmets",
+            "IVE EDGED TO BRUNY -frogiee1",
+            "iris has voice revealed once -iris"
+        ];
+
+        const paragraph = document.getElementById('dynamicParagraph');
+
+        
+        function changeText() {
+            const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+            paragraph.textContent = randomPhrase;
+        }
+
+        
+        paragraph.addEventListener('click', changeText);
+
+        
+        window.onload = changeText;
+    </script>
+
+<div id="search-container">
+        <form id="uv-form"">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/>
+            <input id="uv-address" type="text" class="search-bar-home" placeholder="Start by imputting link or searching with UV..." />
+            <button id="search-button" onclick="submitSearch()">SEARCH <i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+         
+        <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+          </div>
+    </div>
+
+<script src="/static/uv/uv.bundle.js" defer></script>
+<script src="/static/uv/uv.config.js" defer></script>
+<script src="/static/register-sw.js" defer></script>
+<script src="/static/search.js" defer></script>
+<script src="/static/index.js" defer></script>
